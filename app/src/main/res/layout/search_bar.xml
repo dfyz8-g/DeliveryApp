@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_container"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:background="@drawable/search_background"
+
+        >
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/delete_text_button"
+            android:background="@drawable/search_background"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="@dimen/material_margin_small"
+            android:imeOptions="actionDone"
+            android:inputType="textShortMessage"
+            android:labelFor="@+id/search"
+            android:maxLines="1"
+            android:textAppearance="?attr/textAppearanceSearchResultTitle"
+            android:paddingStart="@dimen/material_margin_small"
+            android:paddingEnd="@dimen/material_margin_small"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            tools:hint="Поиск" />
+
+        <ImageView
+            android:id="@+id/delete_text_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Закрыть"
+            android:src="@drawable/ic_delete"
+            android:layout_weight="8"
+            tools:visibility="gone" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/home_dest">
+
+    <fragment
+        android:id="@+id/home_dest"
+        android:name="com.test.deliveryapp.presentation.restaurant.RestaurantFragment"
+        tools:layout="@layout/restaurant_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/hit_fragment"
+        android:name="com.test.deliveryapp.presentation.hit.HitFragment"
+        tools:layout="@layout/hit_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/review_fragment"
+        android:name="com.test.deliveryapp.presentation.review.ReviewFragment"
+        tools:layout="@layout/review_fragment">
+
+    </fragment>
+</navigation>

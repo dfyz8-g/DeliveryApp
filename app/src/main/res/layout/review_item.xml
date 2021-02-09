@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/material_margin_small"
+    android:layout_marginVertical="@dimen/material_margin_super_small"
+    android:background="@drawable/background"
+    android:padding="@dimen/material_margin_small"
+    android:elevation="@dimen/material_margin_super_small">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/material_margin_normal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/review_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/material_margin_small"
+            android:layout_marginVertical="@dimen/material_margin_super_small"
+            android:drawableStart="@drawable/ic_restautant_like_icon"
+            android:drawablePadding="@dimen/material_margin_small"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAppearance="?attr/textAppearanceCaption"
+            tools:text="Василий о ресторане Крок" />
+
+        <TextView
+            android:id="@+id/review_message_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/material_margin_small"
+            android:layout_marginVertical="@dimen/material_margin_super_small"
+            android:textAlignment="textStart"
+            android:textAppearance="?attr/textAppearanceBody1"
+            tools:text=" Dctb  kdjflkdflvkdnmlkfvdlk lk djlkfjbvlkjdflkvjdl  ldfjgvldjfl ldjfvgjdlfjl jdlkfjldfldfg" />
+
+        <TextView
+            android:id="@+id/review_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/material_margin_small"
+            android:layout_marginVertical="@dimen/material_margin_super_small"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAlignment="viewEnd"
+            tools:text="TextView"
+            android:textAppearance="?attr/textAppearanceCaption" />
+    </LinearLayout>
+</LinearLayout>
